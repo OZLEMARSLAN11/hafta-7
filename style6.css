@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --tema-mavi: #0060df;
+  --tema-mavi-koyu: #0b58bd;
+  --tema-beyaz: white;
+  --tema-lila: #e7dfff;
+  --tema-mor:#b833e1;
+}
+body {
+  margin: 0;
+}
+img{
+    max-width: 100%;
+}
+.kapsayici {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.kapsayici-dar{
+max-width: 1000px;
+margin: 0 auto;
+
+}
+.button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  background-color: var(--tema-mavi);
+  text-decoration: none;
+  color: var(--tema-beyaz);
+  font-weight: bold;
+  text-align: center;
+}
+.button:hover {
+  background-color: var(--tema-mavi-koyu);
+}
+.button.outline {
+  background-color: var(--tema-beyaz);
+  border: 2px solid var(--tema-mavi);
+  color: var(--tema-mavi);
+}
+.button.outline:hover {
+  background-color: var(--tema-mavi);
+  color: var(--tema-beyaz);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.flex-kutu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.flex-1 {
+  flex-grow: 1;
+}
+.form-elemani {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgb(211, 211, 211);
+}
+section#bolge1 {
+  background: rgb(241, 250, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 250, 255, 1) 0%,
+    rgba(244, 233, 243, 1) 50%,
+    rgba(241, 250, 255, 1) 100%
+  );
+  padding-top: 2rem;
+}
+#bolge1 > .kapsayici > div {
+  max-width: 650px;
+}
+#bolge1 > .kapsayici > div > h2 {
+  font-size: 3rem;
+}
+
+#bolge2 > p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem 0;
+}
+.mor-yazi{
+    color: var(--tema-mor);
+}
+
+#bolge5{
+    background-color:var(--tema-lila);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#bolge8{
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+#bolge8 > div{
+    text-align: center;
+    
+}
+#bolge8 > ul >li{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 1.4rem;
+
+}
+#bolge8 > ul > li > a{
+    color: var(--tema-mavi);
+    font-size: 1.4rem;
+}
+#bolge8 p {
+    margin: 0rem;
+}
+#bolge8 > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
